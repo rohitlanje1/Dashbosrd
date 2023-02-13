@@ -21,112 +21,114 @@ const Dashboard = () => {
  
     return (
     <>
-    <div>
+    <div className="col col-sm-3  float-left" >
         <Sidebar />
     </div>
-    <div class="col main pt-5 mt-3">
+    
+    <div className="col col-lg-9 float-right">
          
-        <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Library</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Data</li>
+        <navLink aria-label="breadcrumb">
+        <ol className="breadcrumb">
+            <li className="breadcrumb-item"><a to="#">Home</a></li>
+            <li className="breadcrumb-item"><a to="#">Library</a></li>
+            <li className="breadcrumb-item active" aria-current="page">Data</li>
         </ol>
-        </nav>
-        <p class="lead d-none d-sm-block">Add Customers Details and Records</p>
+        </navLink>
+        <p className="lead d-none d-sm-block">Add Customers Details and Records</p>
  
-        <div class="alert alert-warning fade collapse" role="alert" id="myAlert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <div className="alert alert-warning fade collapse" role="alert" id="myAlert">
+            <button type="button" className="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">×</span>
-                <span class="sr-only">Close</span>
+                <span className="sr-only">Close</span>
             </button>
             <strong>Data and Records</strong> Learn more about Customers
         </div>
-        <div class="row mb-3">
-            <div class="col-xl-3 col-sm-6 py-2">
-                <div class="card bg-success text-white h-100">
-                    <div class="card-body bg-success" style={{backgroundColor:"#57b960"}}>
-                        <div class="rotate">
-                            <i class="fa fa-user fa-4x"></i>
+        <div className="row mb-3">
+            <div className="col-xl-3 col-sm-6 py-2">
+                <div className="card bg-success text-white h-100">
+                    <div className="card-body bg-success" style={{backgroundColor:"#57b960"}}>
+                        <div className="rotate">
+                            <i className="fa fa-user fa-4x"></i>
                         </div>
-                        <h6 class="text-uppercase">Customers Registered</h6>
-                        <h1 class="display-4">134</h1>
+                        <h6 className="text-uppercase">Customers Registered</h6>
+                        <h1 className="display-4">134</h1>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-3 col-sm-6 py-2">
-                <div class="card text-white bg-danger h-100">
-                    <div class="card-body bg-danger">
-                        <div class="rotate">
-                            <i class="fa fa-list fa-4x"></i>
+            <div className="col-xl-3 col-sm-6 py-2">
+                <div className="card text-white bg-danger h-100">
+                    <div className="card-body bg-danger">
+                        <div className="rotate">
+                            <i className="fa fa-list fa-4x"></i>
                         </div>
-                        <h6 class="text-uppercase">Application Inprocess</h6>
-                        <h1 class="display-4">87</h1>
+                        <h6 className="text-uppercase">Application Inprocess</h6>
+                        <h1 className="display-4">87</h1>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-3 col-sm-6 py-2">
-                <div class="card text-white bg-info h-100">
-                    <div class="card-body bg-info">
-                        <div class="rotate">
-                          <i class="fab fa-twitter fa-4x"></i>
+            <div className="col-xl-3 col-sm-6 py-2">
+                <div className="card text-white bg-info h-100">
+                    <div className="card-body bg-info">
+                        <div className="rotate">
+                          <i className="fab fa-twitter fa-4x"></i>
                         </div>
-                        <h6 class="text-uppercase">Application Approved</h6>
-                        <h1 class="display-4">30</h1>
+                        <h6 className="text-uppercase">Application Approved</h6>
+                        <h1 className="display-4">30</h1>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-3 col-sm-6 py-2">
-                <div class="card text-white bg-warning h-100">
-                    <div class="card-body">
-                        <div class="rotate">
-                            <i class="fa fa-share fa-4x"></i>
+            <div className="col-xl-3 col-sm-6 py-2">
+                <div className="card text-white bg-warning h-100">
+                    <div className="card-body">
+                        <div className="rotate">
+                            <i className="fa fa-share fa-4x"></i>
                         </div>
-                        <h6 class="text-uppercase">Applications Rejected</h6>
-                        <h1 class="display-4">17</h1>
+                        <h6 className="text-uppercase">Applications Rejected</h6>
+                        <h1 className="display-4">17</h1>
                     </div>
                 </div>
             </div>
         </div>
  
         <hr/>
-        {/* <div class="row placeholders mb-3">
-            <div class="col-6 col-sm-3 placeholder text-center">
-                <img src="//placehold.it/200/dddddd/fff?text=1" class="mx-auto img-fluid rounded-circle" alt="Generic placeholder thumbnail"/>
+        {/* <div className="row placeholders mb-3">
+            <div className="col-6 col-sm-3 placeholder text-center">
+                <img src="//placehold.it/200/dddddd/fff?text=1" className="mx-auto img-fluid rounded-circle" alt="Generic placeholder thumbnail"/>
                 <h4>Responsive</h4>
-                <span class="text-muted">Device agnostic</span>
+                <span className="text-muted">Device agnostic</span>
             </div>
-            <div class="col-6 col-sm-3 placeholder text-center">
-                <img src="//placehold.it/200/e4e4e4/fff?text=2" class="mx-auto img-fluid rounded-circle" alt="Generic placeholder thumbnail"/>
+            <div className="col-6 col-sm-3 placeholder text-center">
+                <img src="//placehold.it/200/e4e4e4/fff?text=2" className="mx-auto img-fluid rounded-circle" alt="Generic placeholder thumbnail"/>
                 <h4>Frontend</h4>
-                <span class="text-muted">UI / UX oriented</span>
+                <span className="text-muted">UI / UX oriented</span>
             </div>
-            <div class="col-6 col-sm-3 placeholder text-center">
-                <img src="//placehold.it/200/d6d6d6/fff?text=3" class="mx-auto img-fluid rounded-circle" alt="Generic placeholder thumbnail"/>
+            <div className="col-6 col-sm-3 placeholder text-center">
+                <img src="//placehold.it/200/d6d6d6/fff?text=3" className="mx-auto img-fluid rounded-circle" alt="Generic placeholder thumbnail"/>
                 <h4>HTML5</h4>
-                <span class="text-muted">Standards-based</span>
+                <span className="text-muted">Standards-based</span>
             </div>
-            <div class="col-6 col-sm-3 placeholder text-center">
-                <img src="//placehold.it/200/e0e0e0/fff?text=4" class="center-block img-fluid rounded-circle" alt="Generic placeholder thumbnail"/>
+            <div className="col-6 col-sm-3 placeholder text-center">
+                <img src="//placehold.it/200/e0e0e0/fff?text=4" className="center-block img-fluid rounded-circle" alt="Generic placeholder thumbnail"/>
                 <h4>Framework</h4>
-                <span class="text-muted">CSS and JavaScript</span>
+                <span className="text-muted">CSS and JavaScript</span>
             </div>
         </div> */}
        
-        <div class="row ">
-            <div class="col-lg-7 col-md-6 col-sm-12">
-              <h5 class="mt-3 mb-3 text-secondary">
+        <div className="row ">
+            <div className="col-lg-7 col-md-6 col-sm-12">
+              <h5 className="mt-3 mb-3 text-secondary">
                Check More Records of Customers
               </h5>
-                <div class="table-responsive">
-                    <table class="table table-striped">
-                        <thead class="thead-light">
+                <div className="table-responsive">
+                    <table className="table table-striped">
+                        <thead className="thead-light">
                             <tr>
-                                <th>No</th>
-                                <th>Label</th>
-                                <th>Header</th>
-                                <th>Column</th>
-                                <th>Record Data</th>
+                                <th>ID</th>
+                                <th>FNAME</th>
+                                <th>LNAME</th>
+                                <th>EMAIL</th>
+                                <th>MOBILE</th>
+                                <th>ADDRESS</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -145,43 +147,47 @@ const Dashboard = () => {
                     </table>
                 </div>
             </div>
-            <div className="col-lg-5 col-md-6 col-sm-12 col-sm-offset-5">
-                <h4 className='title mt-3 mb-3 text-center text-secondary'>Data in Chart</h4>
-                 <div className="mb-5" style={{height:"300px",width:"400px"}}><PieChart/> </div></div>
+            <div classNameName="col-lg-5 col-md-6 col-sm-12 col-sm-offset-5">
+                <h4 classNameName='title mt-3 mb-3 text-center text-secondary'>Data in Chart</h4>
+                 <div classNameName="mb-5" style={{height:"300px",width:"400px"}}> </div></div>
         </div>
        
+
+        
+
+
         <a id="more"></a>
         <hr/>
-        <h2 class="sub-header mt-5">Use card decks for equal height rows of cards</h2>
-        <div class="mb-3">
-            <div class="card-deck">
-                <div class="card card-inverse card-success text-center">
-                    <div class="card-body">
-                        <blockquote class="card-blockquote">
+        <h2 className="sub-header mt-5">Use card decks for equal height rows of cards</h2>
+        <div className="mb-3">
+            <div className="card-deck">
+                <div className="card card-inverse card-success text-center">
+                    <div className="card-body">
+                        <blockquote className="card-blockquote">
                             <p>This is about this organisations.</p>
                             <footer>Here we can add more details <cite title="Source Title">Details</cite></footer>
                         </blockquote>
                     </div>
                 </div>
-                <div class="card card-inverse card-danger text-center">
-                    <div class="card-body">
-                        <blockquote class="card-blockquote">
+                <div className="card card-inverse card-danger text-center">
+                    <div className="card-body">
+                        <blockquote className="card-blockquote">
                             <p>The Bootstrap 3.x element that was called "Panel" before, is now called a "Card".</p>
                             <footer>All of this makes more <cite title="Source Title">Sense</cite></footer>
                         </blockquote>
                     </div>
                 </div>
-                <div class="card card-inverse card-warning text-center">
-                    <div class="card-body">
-                        <blockquote class="card-blockquote">
-                            <p>There are also some interesting new text classes for uppercase and capitalize.</p>
+                <div className="card card-inverse card-warning text-center">
+                    <div className="card-body">
+                        <blockquote className="card-blockquote">
+                            <p>There are also some interesting new text classNamees for uppercase and capitalize.</p>
                             <footer>These handy utilities make it <cite title="Source Title">Easy</cite></footer>
                         </blockquote>
                     </div>
                 </div>
-                <div class="card card-inverse card-info text-center">
-                    <div class="card-body">
-                        <blockquote class="card-blockquote">
+                <div className="card card-inverse card-info text-center">
+                    <div className="card-body">
+                        <blockquote className="card-blockquote">
                             <p>If you want to use cool icons in Bootstrap 4, you'll have to find your own such as Font Awesome or Ionicons.</p>
                             <footer>The Glyphicons are not <cite title="Source Title">Included</cite></footer>
                         </blockquote>
@@ -193,37 +199,37 @@ const Dashboard = () => {
  
         <a id="flexbox"></a>
         <hr/>
-        <h2 class="mt-5">Masonry-style grid columns</h2>
+        <h2 className="mt-5">Masonry-style grid columns</h2>
         <h6>with Bootstrap 4 flexbox</h6>
  
-        <div class="card-columns mb-3">
-            <div class="card">
-                <img class="card-img-top img-fluid" src="//placehold.it/600x200/444/fff?text=..." alt="Card image cap"/>
-                <div class="card-body">
-                    <h4 class="card-title">New XL Grid Tier</h4>
-                    <p class="card-text">With screens getting smaller, Bootstrap 4 introduces a new grid breakpoint with the col-xl-* classes. This extra tier extends the media query range all the way down to 576 px. Eventhough the new XL tier would make one think it’s been added to support extra large screens, it’s actually the opposite.</p>
+        <div className="card-columns mb-3">
+            <div className="card">
+                <img className="card-img-top img-fluid" src="//placehold.it/600x200/444/fff?text=..." alt="Card image cap"/>
+                <div className="card-body">
+                    <h4 className="card-title">New XL Grid Tier</h4>
+                    <p className="card-text">With screens getting smaller, Bootstrap 4 introduces a new grid breakpoint with the col-xl-* classNamees. This extra tier extends the media query range all the way down to 576 px. Eventhough the new XL tier would make one think it’s been added to support extra large screens, it’s actually the opposite.</p>
                 </div>
             </div>
-            <div class="card card-body">
-                <blockquote class="card-blockquote">
+            <div className="card card-body">
+                <blockquote className="card-blockquote">
                     <p>Bootstrap 4 will be lighter and easier to customize.</p>
                     <footer>
-                        <small class="text-muted">
+                        <small className="text-muted">
                           Someone famous like <cite title="Source Title">Mark Otto</cite>
                         </small>
                     </footer>
                 </blockquote>
             </div>
-            <div class="card">
-                <img class="card-img-top img-fluid" src="//placehold.it/600x200/bbb/fff?text=..." alt="Card image cap"/>
-                <div class="card-body">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <div className="card">
+                <img className="card-img-top img-fluid" src="//placehold.it/600x200/bbb/fff?text=..." alt="Card image cap"/>
+                <div className="card-body">
+                    <h4 className="card-title">Card title</h4>
+                    <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
                 </div>
             </div>
-            <div class="card card-body card-inverse card-primary text-center">
-                <blockquote class="card-blockquote">
+            <div className="card card-body card-inverse card-primary text-center">
+                <blockquote className="card-blockquote">
                     <p>Create masonry or Pinterest-style card layouts in Bootstrap 4.</p>
                     <footer>
                         <small>
@@ -232,111 +238,111 @@ const Dashboard = () => {
                     </footer>
                 </blockquote>
             </div>
-            <div class="card card-body text-center">
-                <h4 class="card-title">Clever heading</h4>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p class="card-text"><small class="text-muted">Last updated 5 mins ago</small></p>
+            <div className="card card-body text-center">
+                <h4 className="card-title">Clever heading</h4>
+                <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                <p className="card-text"><small className="text-muted">Last updated 5 mins ago</small></p>
             </div>
-            <div class="card">
-                <img class="card-img img-fluid" src="//placehold.it/600x200/777/fff?text=..." alt="Card image"/>
+            <div className="card">
+                <img className="card-img img-fluid" src="//placehold.it/600x200/777/fff?text=..." alt="Card image"/>
             </div>
-            <div class="card card-body text-right">
-                <blockquote class="card-blockquote">
-                    <p>There are also some interesting new text classes to uppercase or capitalize.</p>
+            <div className="card card-body text-right">
+                <blockquote className="card-blockquote">
+                    <p>There are also some interesting new text classNamees to uppercase or capitalize.</p>
                     <footer>
-                        <small class="text-muted">
+                        <small className="text-muted">
                           Someone famous in <cite title="Source Title">Bootstrap</cite>
                         </small>
                     </footer>
                 </blockquote>
             </div>
-            <div class="card card-body">
-                <h4 class="card-title">Responsive</h4>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <div className="card card-body">
+                <h4 className="card-title">Responsive</h4>
+                <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
             </div>
-            <div class="card">
-                <div class="card-body">
-                    <ul class="list-unstyled">
-                        <li class="text-capitalize"><code class="text-lowercase">text-capitalize</code> Capitalize each word</li>
-                        <li class="text-uppercase"><code class="text-lowercase">text-uppercase</code> Uppercase text</li>
-                        <li class="text-success"><code>text-success</code> Contextual colors for text</li>
-                        <li><code>text-muted</code> <span class="text-muted">Lighten with muted</span></li>
-                        <li><code>text-info</code> <span class="text-muted">Info text color</span></li>
-                        <li><code>text-danger</code> <span class="text-muted">Danger text color</span></li>
-                        <li><code>text-warning</code> <span class="text-muted">Warning text color</span></li>
-                        <li><code>text-primary</code> <span class="text-primary">Primary text color</span></li>
+            <div className="card">
+                <div className="card-body">
+                    <ul className="list-unstyled">
+                        <li className="text-capitalize"><code className="text-lowercase">text-capitalize</code> Capitalize each word</li>
+                        <li className="text-uppercase"><code className="text-lowercase">text-uppercase</code> Uppercase text</li>
+                        <li className="text-success"><code>text-success</code> Contextual colors for text</li>
+                        <li><code>text-muted</code> <span className="text-muted">Lighten with muted</span></li>
+                        <li><code>text-info</code> <span className="text-muted">Info text color</span></li>
+                        <li><code>text-danger</code> <span className="text-muted">Danger text color</span></li>
+                        <li><code>text-warning</code> <span className="text-muted">Warning text color</span></li>
+                        <li><code>text-primary</code> <span className="text-primary">Primary text color</span></li>
                     </ul>
                 </div>
             </div>
-            <div class="card card-body">
-                <h4 class="card-title">Heading</h4>
-                <p class="card-text">So now that you've seen some of what Bootstrap 4 has to offer, are you going to give it a try?</p>
-                <p class="card-text"><small class="text-muted">Last updated 12 mins ago</small></p>
+            <div className="card card-body">
+                <h4 className="card-title">Heading</h4>
+                <p className="card-text">So now that you've seen some of what Bootstrap 4 has to offer, are you going to give it a try?</p>
+                <p className="card-text"><small className="text-muted">Last updated 12 mins ago</small></p>
             </div>
         </div>
       
  
         <a id="layouts"></a>
         <hr/>
-        <h2 class="sub-header mt-5">Interesting layouts and elements</h2>
-        <div class="row mb-3">
-            <div class="col-lg-6">
+        <h2 className="sub-header mt-5">Interesting layouts and elements</h2>
+        <div className="row mb-3">
+            <div className="col-lg-6">
  
-                <div class="card mb-3">
-                    <div class="card-header">
+                <div className="card mb-3">
+                    <div className="card-header">
                         Bye .well, .panel &amp; .thumbnail
                     </div>
-                    <div class="card-body">
-                        <h4 class="card-title">Replaced with .card</h4>
-                        <p class="card-text">All of these Bootstrap 3.x components have been dropped entirely for the new card component.</p>
-                        <button type="button" class="btn btn-secondary btn-lg">Large</button>
+                    <div className="card-body">
+                        <h4 className="card-title">Replaced with .card</h4>
+                        <p className="card-text">All of these Bootstrap 3.x components have been dropped entirely for the new card component.</p>
+                        <button type="button" className="btn btn-secondary btn-lg">Large</button>
                     </div>
                 </div>
  
             </div>
-            <div class="col-lg-6">
+            <div className="col-lg-6">
                
-                <ul class="nav nav-tabs" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home1" role="tab" data-toggle="tab">Home</a>
+                <ul className="nav nav-tabs" role="tablist">
+                    <li className="nav-item">
+                        <a className="nav-link active" to="#home1" role="tab" data-toggle="tab">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#profile1" role="tab" data-toggle="tab">Profile</a>
+                    <li className="nav-item">
+                        <a className="nav-link" to="#profile1" role="tab" data-toggle="tab">Profile</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#messages1" role="tab" data-toggle="tab">Messages</a>
+                    <li className="nav-item">
+                        <a className="nav-link" to="#messages1" role="tab" data-toggle="tab">Messages</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#settings1" role="tab" data-toggle="tab">Settings</a>
+                    <li className="nav-item">
+                        <a className="nav-link" to="#settings1" role="tab" data-toggle="tab">Settings</a>
                     </li>
                 </ul>
  
              
-                <div class="tab-content">
+                <div className="tab-content">
                     <br/>
-                    <div role="tabpanel" class="tab-pane active" id="home1">
+                    <div role="tabpanel" className="tab-pane active" id="home1">
                         <h4>Home</h4>
                         <p>
                             1. These Bootstrap 4 Tabs work basically the same as the Bootstrap 3.x tabs.
                             <br/>
                             <br/>
-                            <button class="btn btn-primary-outline btn-lg">Wow</button>
+                            <button className="btn btn-primary-outline btn-lg">Wow</button>
                         </p>
                     </div>
-                    <div role="tabpanel" class="tab-pane" id="profile1">
+                    <div role="tabpanel" className="tab-pane" id="profile1">
                         <h4>Pro</h4>
                         <p>
                             2. Tabs are helpful to hide or collapse some addtional content.
                         </p>
                     </div>
-                    <div role="tabpanel" class="tab-pane" id="messages1">
+                    <div role="tabpanel" className="tab-pane" id="messages1">
                         <h4>Messages</h4>
                         <p>
                             3. You can really put whatever you want into the tab pane.
                         </p>
                     </div>
-                    <div role="tabpanel" class="tab-pane" id="settings1">
+                    <div role="tabpanel" className="tab-pane" id="settings1">
                         <h4>Settings</h4>
                         <p>
                             4. Some of the Bootstrap 3.x components like well and panel have been dropped for the new card component.
@@ -344,49 +350,49 @@ const Dashboard = () => {
                     </div>
                 </div>
             </div>
-            <div class="clearfix"></div>
-            <div class="col-lg-6">
-                <div class="card card-default card-body">
-                    <ul id="tabsJustified" class="nav nav-tabs nav-justified">
-                        <li class="nav-item">
-                            <a class="nav-link" href="" data-target="#tab1" data-toggle="tab">List</a>
+            <div className="clearfix"></div>
+            <div className="col-lg-6">
+                <div className="card card-default card-body">
+                    <ul id="tabsJustified" className="nav nav-tabs nav-justified">
+                        <li className="nav-item">
+                            <a className="nav-link" to="" data-target="#tab1" data-toggle="tab">List</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="" data-target="#tab2" data-toggle="tab">Profile</a>
+                        <li className="nav-item">
+                            <a className="nav-link active" to="" data-target="#tab2" data-toggle="tab">Profile</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="" data-target="#tab3" data-toggle="tab">More</a>
+                        <li className="nav-item">
+                            <a className="nav-link" to="" data-target="#tab3" data-toggle="tab">More</a>
                         </li>
                     </ul>
                   
                     <br/>
-                    <div id="tabsJustifiedContent" class="tab-content">
-                        <div class="tab-pane" id="tab1">
-                            <div class="list-group">
-                                <a href="" class="list-group-item"><span class="float-right label label-success">51</span> Home Link</a>
-                                <a href="" class="list-group-item"><span class="float-right label label-success">8</span> Link 2</a>
-                                <a href="" class="list-group-item"><span class="float-right label label-success">23</span> Link 3</a>
-                                <a href="" class="list-group-item text-muted">Link n..</a>
+                    <div id="tabsJustifiedContent" className="tab-content">
+                        <div className="tab-pane" id="tab1">
+                            <div className="list-group">
+                                <a to="" className="list-group-item"><span className="float-right label label-success">51</span> Home Link</a>
+                                <a to="" className="list-group-item"><span className="float-right label label-success">8</span> Link 2</a>
+                                <a to="" className="list-group-item"><span className="float-right label label-success">23</span> Link 3</a>
+                                <a to="" className="list-group-item text-muted">Link n..</a>
                             </div>
                         </div>
-                        <div class="tab-pane active" id="tab2">
-                            <div class="row">
-                                <div class="col-sm-7">
+                        <div className="tab-pane active" id="tab2">
+                            <div className="row">
+                                <div className="col-sm-7">
                                     <h4>Profile Section</h4>
                                     <p>Imagine creating this simple user profile inside a tab card.</p>
                                 </div>
-                                <div class="col-sm-5"><img src="//placehold.it/170" class="float-right img-responsive img-rounded"/></div>
+                                <div className="col-sm-5"><img src="//placehold.it/170" className="float-right img-responsive img-rounded"/></div>
                             </div>
                             <hr/>
-                            <a href="javascript:;" class="btn btn-info btn-block">Read More Profiles</a>
-                            <div class="spacer5"></div>
+                            <a to="javascript:;" className="btn btn-info btn-block">Read More Profiles</a>
+                            <div className="spacer5"></div>
                         </div>
-                        <div class="tab-pane" id="tab3">
-                            <div class="list-group">
-                                <a href="" class="list-group-item"><span class="float-right label label-info label-pill">44</span> <code>.panel</code> is now <code>.card</code></a>
-                                <a href="" class="list-group-item"><span class="float-right label label-info label-pill">8</span> <code>.nav-justified</code> is deprecated</a>
-                                <a href="" class="list-group-item"><span class="float-right label label-info label-pill">23</span> <code>.badge</code> is now <code>.label-pill</code></a>
-                                <a href="" class="list-group-item text-muted">Message n..</a>
+                        <div className="tab-pane" id="tab3">
+                            <div className="list-group">
+                                <a to="" className="list-group-item"><span className="float-right label label-info label-pill">44</span> <code>.panel</code> is now <code>.card</code></a>
+                                <a to="" className="list-group-item"><span className="float-right label label-info label-pill">8</span> <code>.nav-justified</code> is deprecated</a>
+                                <a to="" className="list-group-item"><span className="float-right label label-info label-pill">23</span> <code>.badge</code> is now <code>.label-pill</code></a>
+                                <a to="" className="list-group-item text-muted">Message n..</a>
                             </div>
                         </div>
                     </div>
@@ -394,31 +400,31 @@ const Dashboard = () => {
                 </div>
             </div>
  
-            <div class="col-lg-6">
+            <div className="col-lg-6">
                 <div id="accordion" role="tablist" aria-multiselectable="true">
-                  <div class="card">
-                    <div class="card-header" role="tab" id="headingOne"  data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <div className="card">
+                    <div className="card-header" role="tab" id="headingOne"  data-toggle="collapse" data-parent="#accordion" to="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                           Accordion example
                     </div>
-                    <div id="collapseOne" class="card-block collapse in" role="tabpanel" aria-labelledby="headingOne">
-                         <p>This is a Bootstrap 4 accordion that uses the <code>.card</code> classes instead of <code>.panel</code>. The single-open section aspect is not working because the parent option (dependent on .panel) has not yet been finalized in BS 4 alpha. </p>
+                    <div id="collapseOne" className="card-block collapse in" role="tabpanel" aria-labelledby="headingOne">
+                         <p>This is a Bootstrap 4 accordion that uses the <code>.card</code> classNamees instead of <code>.panel</code>. The single-open section aspect is not working because the parent option (dependent on .panel) has not yet been finalized in BS 4 alpha. </p>
                     </div>
-                    <div class="card-header" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <div className="card-header" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" to="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                           Mobile-first
                     </div>
-                    <div id="collapseTwo" class="card-block collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div id="collapseTwo" className="card-block collapse" role="tabpanel" aria-labelledby="headingTwo">
                          <p>Just like it's predecesor, Bootstrap 4 is mobile-first so that you start by designing for smaller devices such as smartphones and tablets, then proceed to laptop and desktop layouts.</p>
                     </div>
-                    <div class="card-header" role="tab" id="headingThree"  data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <div className="card-header" role="tab" id="headingThree"  data-toggle="collapse" data-parent="#accordion" to="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                           Built for CSS3
                     </div>
-                    <div id="collapseThree" class="card-block collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div id="collapseThree" className="card-block collapse" role="tabpanel" aria-labelledby="headingThree">
                          <p>Bootstrap employs a handful of important global styles and settings that you’ll need to be aware of when using it, all of which are almost exclusively geared towards the normalization of cross browser styles.</p>
                     </div>
                   </div>
                 </div>
-                <p class="mt-4">
-                    <a href="/go/KrUO8QpyXP/bootstrao-4-dashboard" target="_ext">Get this Bootstrap 4 admin dashboard at Codeply</a>
+                <p className="mt-4">
+                    <a to="/go/KrUO8QpyXP/bootstrao-4-dashboard" target="_ext">Get this Bootstrap 4 admin dashboard at Codeply</a>
                 </p>
             </div>
         </div>

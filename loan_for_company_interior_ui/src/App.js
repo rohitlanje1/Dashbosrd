@@ -3,8 +3,11 @@ import Navbar from "./Components/Layout/Navbar"
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import {Application, Bank, Business, Defaulter, Disbursment, Document, Enquiry, Family, Guarantor,Installment, Loan, User, Vendor} from "./Components/Pages"
+import Dashboard from "./Components/Pages/Admin_app/DashboardComponents/Dashboard"
+// import Sidebar from "./Components/Pages/Admin_app/DashboardComponents/Sidebar"
 
-// import Sidebar from "./Components/Layout/Dashboard/Sidebar"
+
+
 
 
 function App() {
@@ -13,12 +16,12 @@ function App() {
       <BrowserRouter>
         <Navbar/>
 
-        {/* <div class="container-fluid" id="main">
+        <div class="container-fluid" id="main">
               <div class="row row-offcanvas row-offcanvas-left">
-                <Sidebar/>
-                <Dashboard/>
+                
               </div>
-            </div> */}
+              <Dashboard />
+            </div>
           <Routes>
 
             <Route path='/user' element={<User/>}/>
@@ -34,7 +37,7 @@ function App() {
             <Route path="/document" element={<Document/>}/>
             <Route path="/bank" element={<Bank/>}/>
             <Route path="/loan" element={<Loan/>}/>
-            {/* <Route path="/dashboard" element={<Dashboard />}/> */}
+            
 
           </Routes>
         
